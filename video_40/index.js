@@ -73,10 +73,19 @@ datos.set('profesion', 'desarrollador web');
 // }
 
 
-/*-------------------------*/
-const mensaje = 'Aprendiendo JavaScript';
+/*-------------------------------------------------------*/
+// const mensaje = 'Aprendiendo JavaScript';
+//
+// for(let letra of mensaje) {
+//   //Esto imprime cada letra del string mensaje
+//   console.log(letra);
+// }
 
-for(let letra of mensaje) {
-  //Esto imprime cada letra del string mensaje
-  console.log(letra);
+
+/*-------------------------------------------------------*/
+//Extramos todos los enlaces con iteradores
+const enlaces = document.getElementsByTagName('a');
+
+for(enlace of enlaces) {
+  console.log(enlace.href);
 }
